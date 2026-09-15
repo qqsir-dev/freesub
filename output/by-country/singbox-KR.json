@@ -4,25 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 01 - xiaohe",
-      "server": "3.39.4.109",
-      "server_port": 18967,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
     },
     {
       "type": "hysteria2",
@@ -32,7 +19,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "t.me",
+        "server_name": "css.rbxcdn.com",
         "insecure": true
       }
     },
@@ -48,7 +35,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -70,12 +57,16 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 05 - xiaohe",
-      "server": "140.238.2.250",
-      "server_port": 443,
-      "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
-      "security": "auto"
+      "server": "154.90.62.70",
+      "server_port": 56127,
+      "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
+      "tls": {
+        "enabled": true,
+        "server_name": "154.90.62.70",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
@@ -98,30 +89,55 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 07 - xiaohe",
-      "server": "211.178.105.134",
-      "server_port": 6123,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
+      "server": "3.39.4.109",
+      "server_port": 18967,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 08 - xiaohe",
+      "server": "152-69-231-175.liao.kdns.fr",
+      "server_port": 50160,
+      "password": "1beb216e3f60aea9555dae60d219a5ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "152-69-231-175.liao.kdns.fr",
+        "insecure": false
+      }
     },
     {
       "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 08 - xiaohe",
-      "server": "146.56.112.110",
-      "server_port": 8888,
-      "uuid": "e7c302f3-90d6-42dd-9d7d-94a3683a3707",
+      "tag": "🇰🇷 韩国 (South Korea) 09 - xiaohe",
+      "server": "140.238.2.250",
+      "server_port": 443,
+      "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
       "security": "auto"
     },
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 09 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 10 - xiaohe",
       "server": "152.67.200.82",
       "server_port": 50160,
       "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
       "tls": {
         "enabled": true,
-        "server_name": "152.67.200.82",
+        "server_name": "speedtest.tinkoff.ru",
         "insecure": true
       }
     },
@@ -138,7 +154,8 @@
         "🇰🇷 韩国 (South Korea) 06 - xiaohe",
         "🇰🇷 韩国 (South Korea) 07 - xiaohe",
         "🇰🇷 韩国 (South Korea) 08 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 09 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 09 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 10 - xiaohe"
       ]
     },
     {
@@ -153,7 +170,8 @@
         "🇰🇷 韩国 (South Korea) 06 - xiaohe",
         "🇰🇷 韩国 (South Korea) 07 - xiaohe",
         "🇰🇷 韩国 (South Korea) 08 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 09 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 09 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 10 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
