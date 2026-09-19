@@ -13,12 +13,13 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  server: vpn-au-002.fastervpn.world
+  server: 172.105.169.70
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: whatsapp.com
+  type: vless
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  tls: true
+  servername: 172.105.169.70
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   server: 103.75.119.126
@@ -40,7 +41,7 @@ proxies:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
     short-id: d725f0dd8cce210f
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
   server: 51.161.204.244
   port: 443
@@ -55,15 +56,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
-  server: 152.67.115.203
+  server: vpn-au-002.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
-  password: 633bc3be486b646190661ac2387c150a
-  sni: www.bing.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-au-002.fastervpn.world
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
 proxy-groups:
 - name: PROXIES
   type: select
