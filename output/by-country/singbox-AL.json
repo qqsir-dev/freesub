@@ -6,7 +6,26 @@
     {
       "type": "vless",
       "tag": "🇦🇱 AL 01 - xiaohe",
-      "server": "85.155.228.24",
+      "server": "193.123.244.37",
+      "server_port": 34237,
+      "uuid": "c82f8880-bdd8-4a35-b8e7-ad5aa880f7d0",
+      "tls": {
+        "enabled": true,
+        "server_name": "vz.ylkszy.eu.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?proxyip=proxyip.kr.fxxk.dedyn.io",
+        "headers": {
+          "Host": "vz.ylkszy.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇱 AL 02 - xiaohe",
+      "server": "alda1.thewalkingded.life",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
       "flow": "xtls-rprx-vision",
@@ -15,7 +34,7 @@
         "server_name": "alda1.thewalkingded.life",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -29,14 +48,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - xiaohe"
+        "🇦🇱 AL 01 - xiaohe",
+        "🇦🇱 AL 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - xiaohe"
+        "🇦🇱 AL 01 - xiaohe",
+        "🇦🇱 AL 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
