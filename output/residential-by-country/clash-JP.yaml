@@ -5,18 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
-  server: 36.151.187.225
-  port: 12887
+  server: 178.83.110.32
+  port: 7443
   udp: true
   type: vless
-  uuid: 16b3793b-3335-4832-b1fd-877b2c5e15d6
-  flow: xtls-rprx-vision
+  uuid: 9bb71136-2380-4b6a-97be-1d4ba11d5a55
   tls: true
-  reality-opts:
-    public-key: a3H5ffQkcW4xELeJEGQ8FsaXLG4sGomkB7_ms0d5xzc
-    short-id: b48d22a492
-  servername: www.spotify.com
-  client-fingerprint: edge
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
