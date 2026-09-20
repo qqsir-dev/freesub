@@ -5,100 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: www.shopify.com
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: guanwang.awsno.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 172.67.199.80
+  server: 104.16.10.117
   port: 443
   udp: true
   type: vless
-  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   tls: true
-  servername: 7-m13.18f6a5d8-1d18-4649-9d3d-97c46e3aa3ec.kdns.fr
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ED3ZQPu7lqyeDGD58KabZ
-    headers:
-      Host: 7-m13.18f6a5d8-1d18-4649-9d3d-97c46e3aa3ec.kdns.fr
-- name: 🌐 其他地区 (Other) 03 - xiaohe
-  server: 172.67.199.80
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
-  tls: true
-  servername: 9-m13.18f6a5d8-1d18-4649-9d3d-97c46e3aa3ec.kdns.fr
+  servername: u.srilankangrill.online
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ED3ZQPu7lqyeDGD58KabZ
+    path: /
     headers:
-      Host: 9-m13.18f6a5d8-1d18-4649-9d3d-97c46e3aa3ec.kdns.fr
-- name: 🌐 其他地区 (Other) 04 - xiaohe
-  server: 172.67.199.80
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
-  tls: true
-  servername: 9-m13.18f6a5D8-1D18-4649-9D3d-97C46e3AA3ec.Kdns.fR
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ED3ZQPu7lqyeDGD58KabZ
-    headers:
-      Host: 9-M13.18f6A5D8-1d18-4649-9d3D-97C46E3aA3Ec.kdNS.fR
-- name: 🌐 其他地区 (Other) 05 - xiaohe
-  server: www.nextkyc.com
-  port: 8443
-  udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
+      Host: u.srilankangrill.online
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - xiaohe
-  - 🌐 其他地区 (Other) 02 - xiaohe
-  - 🌐 其他地区 (Other) 03 - xiaohe
-  - 🌐 其他地区 (Other) 04 - xiaohe
-  - 🌐 其他地区 (Other) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - xiaohe
-  - 🌐 其他地区 (Other) 02 - xiaohe
-  - 🌐 其他地区 (Other) 03 - xiaohe
-  - 🌐 其他地区 (Other) 04 - xiaohe
-  - 🌐 其他地区 (Other) 05 - xiaohe
 rules:
 - MATCH,PROXIES
