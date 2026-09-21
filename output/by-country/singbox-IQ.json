@@ -6,58 +6,6 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "45.130.125.207",
-      "server_port": 8443,
-      "uuid": "31aa0950-eb19-45ff-94a2-af416deb3b90",
-      "tls": {
-        "enabled": true,
-        "server_name": "SquarE-saLaD-EbDe.ZDFGVcCfgUUYgGG.wOrKeRS.DEV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
-        "headers": {
-          "Host": "square-salad-ebde.zdfgvccfguuyggg.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇮🇶 IQ 02 - xiaohe",
-      "server": "172.67.218.38",
-      "server_port": 443,
-      "password": "Telegram_healer_config",
-      "tls": {
-        "enabled": true,
-        "server_name": "1v95v6tjywcytbahl7f7lx8b27g.l4495eycqmse9he0yvoemjfc4ibyf-4.workers.dev",
-        "insecure": true,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tr/dxyX388XOtyAjF3A?ed=2560",
-        "headers": {
-          "Host": "1v95v6tjywcytbahl7f7lx8b27g.l4495eycqmse9he0yvoemjfc4ibyf-4.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇶 IQ 03 - xiaohe",
       "server": "193.56.135.212",
       "server_port": 9543,
       "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
@@ -67,7 +15,7 @@
         "server_name": "storage.yandexcloud.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -77,13 +25,32 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 02 - xiaohe",
+      "server": "185.255.179.11",
+      "server_port": 9443,
+      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
+      "tls": {
+        "enabled": true,
+        "server_name": "hub-de-03.hanvpn.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "de03-grpc-8e47a"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇶 IQ 01 - xiaohe",
-        "🇮🇶 IQ 02 - xiaohe",
-        "🇮🇶 IQ 03 - xiaohe"
+        "🇮🇶 IQ 02 - xiaohe"
       ]
     },
     {
@@ -91,8 +58,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇶 IQ 01 - xiaohe",
-        "🇮🇶 IQ 02 - xiaohe",
-        "🇮🇶 IQ 03 - xiaohe"
+        "🇮🇶 IQ 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
