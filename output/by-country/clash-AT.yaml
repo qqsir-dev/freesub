@@ -12,50 +12,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇹 奥地利 (Austria) 02 - xiaohe
-  server: 212.183.88.136
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
-  server: 212.183.88.136
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇦🇹 奥地利 (Austria) 04 - xiaohe
-  server: 212.183.88.136
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇦🇹 奥地利 (Austria) 05 - xiaohe
-  server: 212.183.88.136
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇦🇹 奥地利 (Austria) 06 - xiaohe
   server: 152.53.1.40
   port: 443
   udp: true
@@ -68,8 +24,8 @@ proxies:
     short-id: 43dcff53849b81e6
   servername: at.quattro-tech.ru
   client-fingerprint: chrome
-- name: 🇦🇹 奥地利 (Austria) 07 - xiaohe
-  server: austria-dedic1.failspace.top
+- name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
+  server: 50.7.184.190
   port: 443
   udp: true
   type: vless
@@ -79,6 +35,19 @@ proxies:
   servername: austria-dedic1.failspace.top
   skip-cert-verify: false
   client-fingerprint: firefox
+- name: 🇦🇹 奥地利 (Austria) 04 - xiaohe
+  server: eat8xny7.selqora.ir
+  port: 51595
+  udp: true
+  type: vless
+  uuid: d9826bd9-1023-4a3b-895e-3ba9d64061f2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 2r94D7GhoZK4inffwafDlMW23Rqj1YVR5871e8EHADs
+    short-id: 155e0ffd717f90d8
+  servername: ads.aparat.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,9 +57,6 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
   - 🇦🇹 奥地利 (Austria) 03 - xiaohe
   - 🇦🇹 奥地利 (Austria) 04 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 05 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 06 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -100,8 +66,5 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
   - 🇦🇹 奥地利 (Austria) 03 - xiaohe
   - 🇦🇹 奥地利 (Austria) 04 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 05 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 06 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 07 - xiaohe
 rules:
 - MATCH,PROXIES
