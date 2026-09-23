@@ -14,6 +14,26 @@
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
+      "server": "193.8.215.96",
+      "server_port": 9443,
+      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
+      "tls": {
+        "enabled": true,
+        "server_name": "hub-vie-02.hanvpn.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "vie02-grpc-8e47a"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 03 - xiaohe",
       "server": "152.53.1.40",
       "server_port": 443,
       "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
@@ -23,7 +43,7 @@
         "server_name": "at.quattro-tech.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -31,14 +51,6 @@
           "short_id": "43dcff53849b81e6"
         }
       }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇦🇹 奥地利 (Austria) 03 - xiaohe",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16308,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
     },
     {
       "type": "selector",

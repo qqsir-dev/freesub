@@ -5,30 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
-  server: 104.21.82.226
+  server: frosty-pond-7436.shhabbyat914.workers.dev
   port: 443
   udp: true
   type: vless
-  uuid: 36a857e4-f3d4-43aa-8b90-d7da849da989
+  uuid: de78c0b1-c5c8-412a-bd92-430d1f2e2642
   tls: true
-  servername: 002.inc-electrocell-001-002.workers.dev
+  servername: frosty-pond-7436.shhabbyat914.workers.dev
   skip-cert-verify: false
+  client-fingerprint: random
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: 002.inc-electrocell-001-002.workers.dev
+    path: /
+- name: 🇮🇶 IQ 02 - xiaohe
+  server: 193.56.135.212
+  port: 9543
+  udp: true
+  type: vless
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcde
+  servername: storage.yandexcloud.net
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - xiaohe
+  - 🇮🇶 IQ 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - xiaohe
+  - 🇮🇶 IQ 02 - xiaohe
 rules:
 - MATCH,PROXIES
