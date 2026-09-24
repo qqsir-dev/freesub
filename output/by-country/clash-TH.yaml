@@ -5,17 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  server: 34.15.162.1
-  port: 443
+  server: 119.46.51.45
+  port: 37515
   udp: true
-  type: vless
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  tls: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-    short-id: ca672c53fbbac555
-  servername: www.cloudflare.com
-  client-fingerprint: edge
+  type: vmess
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
   server: 103.86.49.57
   port: 80
@@ -40,7 +36,19 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇹🇭 泰国 (Thailand) 04 - xiaohe
-  server: 104.16.10.185
+  server: 34.15.162.1
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  tls: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+    short-id: ca672c53fbbac555
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇹🇭 泰国 (Thailand) 05 - xiaohe
+  server: 104.21.34.106
   port: 443
   udp: true
   type: vless
@@ -48,7 +56,6 @@ proxies:
   tls: true
   servername: v2ray.simspeedup.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
@@ -63,6 +70,7 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 02 - xiaohe
   - 🇹🇭 泰国 (Thailand) 03 - xiaohe
   - 🇹🇭 泰国 (Thailand) 04 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,5 +80,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 02 - xiaohe
   - 🇹🇭 泰国 (Thailand) 03 - xiaohe
   - 🇹🇭 泰国 (Thailand) 04 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 05 - xiaohe
 rules:
 - MATCH,PROXIES

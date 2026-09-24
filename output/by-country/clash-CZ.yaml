@@ -1,0 +1,89 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
+  network: ws
+  ws-opts:
+    path: /vl/yLWNcuUuw1jlJpkDhGy
+    headers:
+      Host: fornewiran.ade-1000.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 104.21.70.21
+  port: 443
+  udp: true
+  type: vless
+  uuid: 20e295db-a6af-4006-bfd6-91453f169968
+  tls: true
+  servername: 057.electrocellco-cf-057.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: 057.electrocellco-cf-057.workers.dev
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  server: 104.17.147.22
+  port: 443
+  udp: true
+  type: vless
+  uuid: 401d950d-4f5c-45c7-bf44-8b69acf35f6f
+  tls: true
+  servername: 7x70yyvt7eqotx-iq9n3rjt1xn1jwkh9.asdfsafdsaf.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiM1lhMlFGcm15ZkQ0a1AiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+    headers:
+      Host: 7x70yyvt7eqotx-iq9n3rjt1xn1jwkh9.asdfsafdsaf.workers.dev
+- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 20e295db-a6af-4006-bfd6-91453f169968
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: 057.electrocellco-cf-057.workers.dev
+- name: 🇨🇿 捷克 (Czech) 05 - xiaohe
+  server: 153.76.185.148
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 1552d599-a036-4389-a5c0-bf14dfaddc1a
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
+  - 🇨🇿 捷克 (Czech) 04 - xiaohe
+  - 🇨🇿 捷克 (Czech) 05 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
+  - 🇨🇿 捷克 (Czech) 04 - xiaohe
+  - 🇨🇿 捷克 (Czech) 05 - xiaohe
+rules:
+- MATCH,PROXIES
