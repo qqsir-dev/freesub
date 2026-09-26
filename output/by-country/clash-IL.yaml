@@ -44,18 +44,18 @@ proxies:
   servername: de2.dzvn.space
   client-fingerprint: firefox
 - name: 🇮🇱 以色列 (Israel) 04 - xiaohe
-  server: arcturus.yokkastars.com
-  port: 40443
+  server: 185.249.153.108
+  port: 443
   udp: true
   type: vless
-  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
+  uuid: 4cf9c712-11c4-47d8-aa31-a1693a1aa4e5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
-    short-id: db46e2946fc466fd
-  servername: deepl.com
-  client-fingerprint: firefox
+    public-key: xOJ3INBNzRKOKYGQZmSYczgTjTKwdYQ4BFfc75wVazw
+    short-id: 73c9e31ccafda20e
+  servername: www.nordivablog.ru
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
